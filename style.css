@@ -101,21 +101,25 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding-top: 10px;
+    width: 100%;
+    height: 770px;
 }
 .gheter_start{
-    margin-top: 28px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     width: 50%;
     gap: 80px;
+    padding-bottom: 54px;
 }
 .gheter_starttext{
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
+
 .gheterimg{
     content: url("image/gheter.png");
     width: 44%; 
@@ -125,8 +129,9 @@ flex-direction: column;
     text-align: center;
 }
 .gheter_start p{
-    font-size: 120%;
+    font-size: 110%;
     text-align: center;
+    margin-left: 40px;
 }
 .gheter_end{
     display: flex;
@@ -134,8 +139,43 @@ flex-direction: column;
     align-items: center;
     flex-direction: column;
     width: 50%;
+    margin-right: 19px;
+    gap: 15px;
+}
+.gheter_end p{
+    font-size: 190%;
+    margin-right: 26px;
+}
+.gheter_end h3{
+    font-size: 90%;
+    margin-right: 16px;
+}
+.gheter_end h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: black; 
+}
+.gheter_endtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
 }
 .gheterendimg{
     content: url("image/gheterend.png");
-    width: 34%; 
+    width: 45%; 
+}
+.gheter::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: black; 
 }
