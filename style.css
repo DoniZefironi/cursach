@@ -11,7 +11,6 @@ body h2{
 header{
     position: relative;
     background: #FAF5E5;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +60,6 @@ main{
 .place{
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-left: 34px;
@@ -90,7 +88,7 @@ flex-direction: column;
 }
 .imgplace{
     content: url("image/place.png");
-    width: 56%;
+    width: 53.3%;
 }
 .placeimg{
     content: url("image/placebottom.png");
@@ -104,6 +102,7 @@ flex-direction: column;
     padding-top: 10px;
     width: 100%;
     height: 770px;
+    position: relative;
 }
 .gheter_start{
     display: flex;
@@ -173,9 +172,275 @@ flex-direction: column;
 .gheter::after {
     content: '';
     position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: black; 
+}
+.themenu{
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 60px 0px 10px 0px;
+width: 100%;
+}
+.viewmenu{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 119px;
+flex-direction: row;
+}
+.textview{
+flex-direction: column;
+align-items: start;
+display: flex;
+gap: 30px;
+margin-left: 106px;
+margin-bottom: 44px;
+}
+.textinmenu{
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+gap: 39px;
+}
+.textinmenu h2{
+    font-family: Roboto;
+font-size: 59px;
+font-weight: 400;
+line-height: 63px;
+letter-spacing: 1.7999999523162842px;
+text-align: left;
+}
+.textinmenu p{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 22.4px;
+letter-spacing: 0.3199999928474426px;
+text-align: left;
+width: 68%;
+margin-top: 20px;
+}
+.vtm{
+    position: relative;
+}
+.vtm::after {
+    content: '';
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1px; 
-    background-color: black; 
+    background-color: #0000004D; 
+
+}
+.viewimg{
+    content: url("image/bellyfull.png");
+    width: 45%; 
+    margin-right: 110px;
+    margin-top: 69px; 
+}
+.bookin{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+gap: 200px;
+padding-top: 50px;
+padding-bottom: 32px;
+}
+.textbookin{
+    display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+gap: 39px;
+width: 29%;
+}
+.textbookin p{
+    font-family: Roboto;
+font-size: 28px;
+font-weight: 400;
+line-height: 33.8px;
+letter-spacing: 0.7799999713897705px;
+text-align: left;
+
+}
+.bookimg{
+    content: url("image/heartfull.png");
+    width: 31.5%; 
+    margin-right: 20px;
+}
+
+.honest{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+background-color: #9C421F;
+padding-top: 50px;
+padding-left: 100px;
+gap: 139px;
+}
+.honestimg{
+    content: url("image/bellyfull.png");
+}
+.texthonest{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 30px;
+}
+.mintexthonest{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 44px;
+width: 60%;
+}
+.mintexthonest h2{
+    font-family: Roboto;
+font-size: 60px;
+font-weight: 400;
+line-height: 63px;
+letter-spacing: 1.7999999523162842px;
+text-align: center;
+}
+.mintexthonest p{
+    font-family: Roboto;
+font-size: 19px;
+font-weight: 400;
+line-height: 22.4px;
+letter-spacing: 0.3199999928474426px;
+text-align: center;
+}
+.mintexthonest b{
+    font-family: Roboto;
+font-size: 13px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 2.0799999237060547px;
+text-align: center;
+}
+.texthonest b{
+    font-family: Roboto;
+font-size: 13px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 2.0799999237060547px;
+text-align: center;
+}
+.bottomhonest{
+    content: url("image/IMAGE.png");
+    width: 30.5%; 
+}
+.need{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+padding: 62px 0px 40px 0px;
+}
+.needimg{
+    content: url("image/needagift.png");
+}
+.textneed{
+    display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+width: 30%;
+gap: 44px;
+}
+.textneed h2{
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 1.7999999523162842px;
+    text-align: left;
+}
+.textneed p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.3199999928474426px;
+    text-align: left;
+}
+.textneed b{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 2.0799999237060547px;
+    text-align: left;
+}
+.blocklazanya{
+    width: 1280px;
+    height: 760px;
+}
+.lazanya{
+    content: url("image/lazanya.png");
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.neigh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.neigh p{
+    font-family: Roboto;
+font-size: 26px;
+font-weight: 400;
+line-height: 33.8px;
+letter-spacing: 0.7799999713897705px;
+text-align: left;
+}
+.blocki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 14px;
+}
+.block{
+    border: 1px solid black;
+    width: 244px;
+    height: 38px;
+}
+.blockbutton{
+    width: 99px;
+    height: 22px;
+    background-color: black;
+    color: white;
+}
+.itsallin{
+
+}
+.itsallinimg{
+    content: url("image/itsallin.png");
+}
+.elementsitsallin{
+
+}
+.textitsallin{
+
+}
+.juliet{
+    content: url("image/juliet.png");
+}
+.punch{
+    content: url("image/punch.png");
 }
