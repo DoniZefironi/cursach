@@ -427,16 +427,69 @@ text-align: left;
     color: white;
 }
 .itsallin{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 50px 50px 50px;
+    gap: 80px;
 }
 .itsallinimg{
     content: url("image/itsallin.png");
+    margin: 50px 0px 0px 50px;
 }
 .elementsitsallin{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
 }
 .textitsallin{
-
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 96px;
+    width: 80%;
+}
+.textitsallin h2{
+    font-family: Roboto;
+font-size: 58px;
+font-weight: 400;
+line-height: 63px;
+letter-spacing: 1.7999999523162842px;
+text-align: left;
+}
+.textitsallin b{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 2.0799999237060547px;
+    text-align: left;    
+}
+.textintext{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+.textitsallin p{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+letter-spacing: 0.3199999928474426px;
+text-align: left;
+}
+.julpun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
 }
 .juliet{
     content: url("image/juliet.png");
