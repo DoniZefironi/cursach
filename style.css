@@ -497,3 +497,131 @@ text-align: left;
 .punch{
     content: url("image/punch.png");
 }
+.diners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 14px;
+    gap: 22px;
+    padding-bottom: 60px;
+}
+.elemdiners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    gap: 70px;
+}
+.choice{
+    content: url("image/choice.png");
+}
+.textchoice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.textchoice p{
+    font-family: Roboto;
+font-size: 13px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 2.0799999237060547px;
+text-align: center;
+}
+.imgdiners{
+    content: url("image/chto.png");
+}
+.textdiners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+}
+.rowtextindiners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+}
+.textintextdiners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textintextdiners .rowtextindiners p{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+letter-spacing: 0.3199999928474426px;
+text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFD36B;
+    padding-bottom: 6px;
+}
+.imgfooter{
+    content: url("image/placebottom.png");
+    margin-top: 36px;
+}
+.textfooter{
+    display: flex;
+    gap: 86px;
+    align-items: start;
+    flex-direction: column;
+}
+.uptextfooter{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 140px;
+}
+.contactus{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.textcontactus{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.opening{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.textopening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.downfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
