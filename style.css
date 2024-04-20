@@ -71,7 +71,17 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 80px;
+position: relative;
   }
+.placetext::after {
+    content: '';
+    position: absolute;
+    bottom: -128px;
+    left: 60px;
+    width: 80%;
+    height: 1px; 
+    background-color: black; 
+}
 .placetext h2{
     font-size: 300%;
     text-align: center;
@@ -94,6 +104,7 @@ flex-direction: column;
     content: url("image/placebottom.png");
     width: 34%;
 }
+
 .gheter{
     display: flex;
     justify-content: center;
@@ -148,6 +159,16 @@ flex-direction: column;
 .gheter_end h3{
     font-size: 90%;
     margin-right: 16px;
+    position: relative;
+}
+.gheter_end h3::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: black; 
 }
 .gheter_end h3::after {
     content: '';
@@ -177,6 +198,7 @@ flex-direction: column;
     height: 1px; 
     background-color: black; 
 }
+
 .themenu{
 display: flex;
 align-items: center;
@@ -339,6 +361,7 @@ text-align: center;
     content: url("image/IMAGE.png");
     width: 30.5%; 
 }
+
 .need{
     display: flex;
 justify-content: space-around;
@@ -381,8 +404,9 @@ gap: 44px;
     letter-spacing: 2.0799999237060547px;
     text-align: left;
 }
+
 .blocklazanya{
-    width: 1280px;
+    width: 100%;
     height: 760px;
 }
 .lazanya{
@@ -391,6 +415,7 @@ gap: 44px;
     height: 100%;
     object-fit: cover;
 }
+
 .neigh{
     display: flex;
     justify-content: center;
@@ -426,6 +451,7 @@ text-align: left;
     background-color: black;
     color: white;
 }
+
 .itsallin{
     display: flex;
     justify-content: center;
@@ -624,4 +650,134 @@ footer{
     align-items: center;
     flex-direction: row;
     gap: 50px;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding-left: 0px;
+    }   
+    .navigat ul {
+        display: none;
+      }
+
+      .place{
+        flex-direction: column;
+        margin-left: 0px;
+        padding-top: 100px;
+        gap: 172px;
+    }
+    .placetext{
+    width: 44%;
+    gap: 80px;
+      }
+      .placete{
+        gap: 66px;
+      }
+    .placetext::after {
+        bottom: -70px;
+        left: -50px;
+        width: 130%;
+    }
+    .imgplace{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .imgplaceimg{
+        width: 100%;
+        height: 854px;
+    }
+    .placeimg{
+        width: 54%;
+    }
+
+    .gheter{
+        flex-direction: column-reverse;
+        height: 1578px;
+        gap: 0px;
+        padding-top: 0;
+        justify-content: space-around;
+    }
+    .gheter_start{
+        gap: 80px;
+        width: 70%;
+        padding-bottom: 100px;
+    }
+    
+    .gheterimg{
+        width: 54%; 
+    }
+    .gheter_end{
+        margin-right: 0px;
+        gap: 65px;
+    }
+    .gheterendimg{
+        width: 74%; 
+    }
+
+    .themenu{
+        padding: 80px 0px 0px 0px;
+        width: 100%;
+        }
+        .viewmenu{
+        gap: 0px;
+        flex-direction: column;
+        }
+        .textview{
+        margin-left: 186px;
+        margin-bottom: 0px;
+        }
+        .viewimg{
+            width: 52%; 
+            margin-right: 0px;
+            margin-top: 60px; 
+        }
+        .bookin{
+        flex-direction: column;
+        gap: 100px;
+        padding-top: 20px;
+        padding-bottom: 55px;
+        }
+        .textbookin{
+        gap: 99px;
+        width: 59%;
+        }
+        .bookimg{
+            width: 52%; 
+            margin-right: 0px;
+        }
+
+        .honest{
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-bottom: 40px;
+        }
+        .honestimg{
+            display: none;
+        }
+        .need{
+        flex-direction: column;
+        gap: 140px;
+        }
+        .textneed{
+        width: 50%;
+        }
+
+        .blocklazanya{
+            padding-top: 60px;
+            width: 100%;
+        }
+
+        .neigh{
+            gap: 50px;
+            padding-top: 40px;
+        }
+
+        .blocki{
+            flex-direction: column;
+        }
+
+        .itsallinimg{
+            display: none;
+        }
 }
