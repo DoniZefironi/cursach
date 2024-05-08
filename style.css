@@ -18,7 +18,7 @@ header{
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 20px;
-    gap: 390px;
+    gap: 100px;
 }
 header::after {
     content: '';
@@ -62,26 +62,16 @@ main{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-left: 34px;
 }
 .placetext{
+    margin-left: 34px;
 width: 44%;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 80px;
-position: relative;
   }
-.placetext::after {
-    content: '';
-    position: absolute;
-    bottom: -128px;
-    left: 60px;
-    width: 80%;
-    height: 1px; 
-    background-color: black; 
-}
 .placetext h2{
     font-size: 300%;
     text-align: center;
@@ -98,7 +88,7 @@ flex-direction: column;
 }
 .imgplace{
     content: url("image/place.png");
-    width: 53.3%;
+    width: 100%;
 }
 .placeimg{
     content: url("image/placebottom.png");
@@ -462,7 +452,7 @@ text-align: left;
 }
 .itsallinimg{
     content: url("image/itsallin.png");
-    margin: 50px 0px 0px 50px;
+    margin: 50px 0px 0px 55px;
 }
 .elementsitsallin{
     display: flex;
@@ -651,24 +641,77 @@ footer{
     flex-direction: row;
     gap: 50px;
 }
-
+@media (max-width: 1030px) {
+.honest{
+    gap: 40px;
+}
+.mintexthonest h2{
+    font-size: 50px;
+}
+.textneed h2{
+    font-size: 40px;
+}
+.blocki{
+    flex-direction: column;
+}
+.itsallin{
+    gap: 20px;
+    padding-left: 0px;
+}
+.itsallinimg{
+    margin-left: 0px;
+}
+.textitsallin h2{
+    width: 77%;
+}
+.julpun{
+    flex-direction: column;
+}
+}
 @media (max-width: 768px) {
     header{
-        padding-left: 0px;
+        padding-left: 410px;
+        gap: 433px;
     }   
     .navigat ul {
         display: none;
+      }
+      .burger-menu {
+        padding-top: 6px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .burger-menu span {
+        display: block;
+        width: 50px;
+        height: 1px;
+        margin-bottom: 10px;
+        background-color: #000;
+      }
+      
+      .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
       }
 
       .place{
         flex-direction: column;
         margin-left: 0px;
-        padding-top: 100px;
-        gap: 172px;
+        padding-top: 90px;
+        gap: 179px;
     }
     .placetext{
     width: 44%;
     gap: 80px;
+    margin-left: 12px;
       }
       .placete{
         gap: 66px;
@@ -693,30 +736,34 @@ footer{
 
     .gheter{
         flex-direction: column-reverse;
-        height: 1578px;
-        gap: 0px;
-        padding-top: 0;
-        justify-content: space-around;
+        height: auto;
+        gap: 80px;
+        padding-top: 20px;
     }
     .gheter_start{
-        gap: 80px;
+        gap: 0px;
         width: 70%;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
     }
-    
+    .gheter_starttext{
+        gap: 45px;
+    }
+    .gheter_starttext h3{
+        margin: 0;
+    }
     .gheterimg{
         width: 54%; 
     }
     .gheter_end{
         margin-right: 0px;
-        gap: 65px;
+        gap: 15px;
     }
     .gheterendimg{
         width: 74%; 
     }
 
     .themenu{
-        padding: 80px 0px 0px 0px;
+        padding: 98px 0px 0px 0px;
         width: 100%;
         }
         .viewmenu{
@@ -762,22 +809,88 @@ footer{
         .textneed{
         width: 50%;
         }
+        .mintexthonest h2{
+            width: 92%;
+        }
 
         .blocklazanya{
-            padding-top: 60px;
+            padding-top: 0px;
             width: 100%;
+            height: 820px;
         }
 
         .neigh{
-            gap: 50px;
-            padding-top: 40px;
+            gap: 60px;
+            padding-top: 50px;
         }
 
         .blocki{
             flex-direction: column;
+            padding-top: 20px;
+            gap: 5px;
         }
 
+        .itsallin{
+            padding: 0px 50px 77px 50px;
+        }
+        .textitsallin{
+            padding-top: 76px;
+            margin-left: 60px;
+        }
+        .textitsallin h2{
+            width: 87%;
+        }
+        .julpun{
+            margin-right: 27px;
+            margin-bottom: 20px;
+            flex-direction: row;
+        }
+        .diners{
+            padding-bottom: 33px;
+        }
         .itsallinimg{
             display: none;
         }
+        .uptextfooter{
+            flex-direction: column;
+        }
+        .downfooter{
+            flex-direction: column;
+        }
+}
+@media (max-width: 320px) {
+    header{
+        gap: 33px;
+        padding-left: 10px;
+    }
+.gheter_end p{
+    line-height: 33px;
+}
+.gheterimg{
+    margin: 6px 0px 0px 10px;
+}
+.gheter_start{
+    font-size: 104%;
+}
+.textinmenu{
+    margin-left: 0px;
+}
+.textview{
+    margin-left: 86px;
+}
+.vtm{
+    margin-left: 10px;
+}
+.textbookin{
+    margin: 5px 0px 0px 10px;
+}
+.gheter_start h2{
+    font-size: 268%;
+}
+.needimg{
+    width: 100%;
+}
+.julpun{
+    flex-direction: column;
+}
 }
