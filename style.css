@@ -54,6 +54,10 @@ line-height: 20px;
 letter-spacing: 0em;
 text-align: left;
   }
+.language{
+    width: 50px;
+    height: 20px;
+}
 main{
     background: #FAF5E5;
 }
@@ -308,34 +312,36 @@ padding-left: 100px;
 gap: 139px;
 }
 .slider {
-    position: relative;
-  }
-  
-  .slides {
-    width: 500px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .slides img {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .pagination {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .pagination button {
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .current-slide {
-    font-weight: bold;
-  }
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.slides-container {
+  width: 500px;
+  height: auto;
+  overflow: hidden;
+}
+
+.slides-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.current-slide {
+  font-weight: bold;
+}
 .texthonest{
     display: flex;
 justify-content: center;
@@ -472,7 +478,6 @@ text-align: left;
     height: 38px;
 }
 .blockbutton{
-    width: 99px;
     height: 22px;
     background-color: black;
     color: white;
@@ -638,7 +643,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 140px;
+    gap: 120px;
 }
 .contactus{
     display: flex;
@@ -677,6 +682,17 @@ footer{
     flex-direction: row;
     gap: 50px;
 }
+
+@media (max-width: 1100px) {
+    .textneed h2 {
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .mintexthonest h2 {
+        font-size: 40px;
+        line-height: 43px;
+    }
+}
 @media (max-width: 1030px) {
 .honest{
     gap: 40px;
@@ -700,9 +716,29 @@ footer{
 .textitsallin h2{
     width: 77%;
 }
+.mintexthonest h2 {
+font-size: 34px;
+}
+.viewimg{
+    width: 400px;
+}
+}
 .julpun{
     flex-direction: column;
 }
+@media (max-width: 920px) {
+    .viewimg{
+        width: 340px;
+    }
+    .slides-container{
+        width: 400px;
+    }
+    .textneed h2 {
+        font-size: 30px;
+    }
+    .mintexthonest h2 {
+        font-size: 30px;
+    }
 }
 @media (max-width: 768px) {
     header{
@@ -710,6 +746,9 @@ footer{
         width: 100%;
         padding-left: 0px;
     }   
+    .slides-container{
+        width: 350px;
+    }
     .viewimg{
         width: 500px;
     }
@@ -811,7 +850,7 @@ footer{
         flex-direction: column;
         }
         .textview{
-        margin-left: 186px;
+        margin-left: 16px;
         margin-bottom: 0px;
         }
         .viewimg{
@@ -904,6 +943,9 @@ footer{
         width: 100%;
         padding-left: 0px;
     }  
+    .slides-container{
+        width: 300px;
+    }
 }
 @media (max-width: 600px) {
     header{
@@ -917,18 +959,37 @@ footer{
     .julpun{
         margin-right: 2px;
     }
+    .slides-container{
+        width: 250px;
+    }
 }
 @media (max-width: 490px) {
     header{
         padding-left: 0px;
-        gap: 133px;
+        gap: 83px;
         width: 100%;
     }  
+    .julpun{
+        flex-direction: column;
+    }
+    .textinmenu h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .imgfooter{
+        display: none;
+    }
+    .uptextfooter{
+        gap: 20px;
+    }
+    .gheter_start h2 {
+        font-size: 240%;
+    }
 }
 @media (max-width: 320px) {
     header{
         gap: 33px;
-        padding-left: 10px;
+        padding-left: 0px;
     }
 .gheter_end p{
     line-height: 33px;
@@ -943,7 +1004,7 @@ footer{
     margin-left: 0px;
 }
 .textview{
-    margin-left: 86px;
+    margin-left: 6px;
 }
 .vtm{
     margin-left: 10px;

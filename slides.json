@@ -1,0 +1,60 @@
+{
+    "slides": [
+      {
+        "src": "image/1aperol.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/2aperol.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/3aperol.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/4aperol.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/1classik.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/2classik.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/3classik.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/4classik.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/5classik.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/6classik.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/1sig.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/2sig.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/3sig.png",
+        "alt": "Изображение"
+      },
+      {
+        "src": "image/4sig.png",
+        "alt": "Изображение"
+      }
+    ]
+  }

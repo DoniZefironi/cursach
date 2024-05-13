@@ -16,22 +16,23 @@
           </div>
         <nav class="navigat">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">FEED ME MENU</a></li>
-                <li><a href="#">CONTACT US</a></li>
-                <li><a href="#">GIFT VOUCHERS</a></li>
-                <li><a href="#">BOOKINGS</a></li>
+                <li><a href="#place" id="home"></a></li>
+                <li><a href="#gheter" id="about"></a></li>
+                <li><a href="#themenu" id="menu"></a></li>
+                <li><a href="#honest" id="drinkmenu"></a></li>
+                <li><a href="#diners" id="contact"></a></li>
+                <li><a href="#neigh" id="vauncher"></a></li>
+                <li><a href="#bookin" id="reserv"></a></li>
+                <button id="languageButton" onclick="changeLanguage()">English</button>
               </ul>
         </nav>
     </header>
     <main>
-        <div class="place">
+        <div class="place" id="place">
             <div class="placetext">
                 <div class="placete">
-                    <h2>A MEETING<br>PLACE FOR<br>RICHMOND<br>LOCALS.</h2>
-                    <p>(AND EVERYONE ELSE).</p>
+                    <h2 id="mesto"></h2>
+                    <p id="ivse"></p>
                 </div>
                 <div class="placeimg">
                 </div>
@@ -41,33 +42,33 @@
                 </div>
             </div>
         </div>
-        <div class="gheter">
+        <div class="gheter" id="gheter">
             <div class="gheter_start">
                 <div class="gheter_starttext">
-                    <h2>GATHER IN<br>GOOD<br>COMPANY</h2>
-                    <p>WAYGOOD is a meeting place for Richmond locals<br>(and everyone else). We’ve taken the best parts of<br>a bottle shop and a neighbourhood eatery<br>and mixed them together. Drop past for a drink,<br>stay for a bite or grab a bottle on the fly.</p>
+                    <h2 id="greeting"></h2>
+                    <p id="description"></p>
                 </div>
                 <div class="gheterimg">
                 </div>
             </div>
             <div class="gheter_end">
                 <div class="gheter_endtext">
-                    <p>Our only rule is: come as<br>you are and enjoy as you<br>please. We look forward to<br>seeing you.</p>
-                    <h3>BOOK YOURSELF IN</h3>
+                   <p id="nashe"></p>
+                   <a href="reservation.html" id="bron"></a>
                 </div>
                 <div class="gheterendimg">
                 </div>
             </div>
         </div>
-        <div class="themenu">
+        <div class="themenu" id="themenu">
             <div class="viewmenu">
                 <div class="textview">
                     <div class="textinmenu">
-                        <b>THE MENU</b>
-                        <h2>BELLY FULL,<br>HEART FULL</h2>
-                        <p>Our menu changes weekly based on seasonality and inspiration, but you can always count on it being approachable and nourishing.</p>
+                        <b id="menu"></b>
+                        <h2 id="jivot"></h2>
+                        <p id="nashemenu"></p>
                     </div>
-                    <a class="vtm" href="menu.html">VIEW THE MENU</a>
+                    <a class="vtm" href="menu.html" id="vievmenu"></a>
                 </div>
                 <div class="viewimg">
                     <img src="image/1pos.png" alt="Изображение">
@@ -101,46 +102,31 @@
                     <img src="image/11poshot.png" alt="Изображение">
                 </div>
             </div>
-            <div class="bookin">
+            <div class="bookin" id="bookin">
                 <div class="bookimg">
                 </div>
                 <div class="textbookin">
-                    <p>Whether flying solo, grazing with friends or settling in for the evening, we’re certain we’ll be able to accomodate you. After all, hospitality is what we do.</p>
-                    <a href="reservation.html">RESERVATION</a>
+                    <p id="esli"></p>
+                    <a href="reservation.html" id="reservi"></a>
                 </div>
             </div>
         </div>
-        <div class="honest">
+        <div class="honest" id="honest">
             <div class="slider">
-                <div class="slides">
-                    <img src="image/1aperol.png" alt="Изображение">
-                    <img src="image/2aperol.png" alt="Изображение">
-                    <img src="image/3aperol.png" alt="Изображение">
-                    <img src="image/4aperol.png" alt="Изображение">
-                    <img src="image/1classik.png" alt="Изображение">
-                    <img src="image/2classik.png" alt="Изображение">
-                    <img src="image/3classik.png" alt="Изображение">
-                    <img src="image/4classik.png" alt="Изображение">
-                    <img src="image/5classik.png" alt="Изображение">
-                    <img src="image/6classik.png" alt="Изображение">
-                    <img src="image/1sig.png" alt="Изображение">
-                    <img src="image/2sig.png" alt="Изображение">
-                    <img src="image/3sig.png" alt="Изображение">
-                    <img src="image/4sig.png" alt="Изображение">
-                </div>
+                <div class="slides-container"></div>
                 <div class="pagination">
-                    <button class="prev">Назад</button>
-                    <span class="current-slide">1</span> / <span class="total-slides">15</span>
-                    <button class="next">Вперед</button>
-                  </div>
-            </div>
+                  <button class="prev" id="back"></button>
+                  <span class="current-slide">1</span> / <span class="total-slides">14</span>
+                  <button class="next" id="noback"></button>
+                </div>
+              </div>
             <div class="texthonest">
                 <div class="mintexthonest">
-                    <b>WINE OFFERING</b>
-                    <h2>HONEST CELLAR SERVICE</h2>
-                    <p>We’re keeping things simple: choose what you like from our wall of 80 regularly- changing local wines, uncork in-house for $25, or be on your way, armed with a bottle and a smile. Our team are masters in the art of drinking well and here to help you follow suit.</p>
+                    <b id="vino"></b>
+                    <h2 id="real"></h2>
+                    <p id="mi"></p>
                 </div>
-                <a href="drinklist.html">DRINK LIST</a>
+                <a href="drinklist.html" id="drinkmen"></a>
                 <div class="bottomhonest">
                 </div>
             </div>
@@ -149,22 +135,18 @@
             <div class="needimg">
             </div>
             <div class="textneed">
-                <b>GIFT VOUCHERS</b>
-                <h2>NEED A GIFT VOUCHER?</h2>
-                <p>Give the gift of good company with a WAYGOOD voucher. The best part? Our vouchers can also be redeemed in the city at our sister cocktail bar</p>
+                <b id="vauncher"></b>
+                <h2 id="nujen"></h2>
+                <p id="gift"></p>
             </div>
         </div>
         <div class="blocklazanya">
             <div class="lazanya">
             </div>
         </div>
-        <div class="neigh">
-            <b>
-                NEIGHBOURHOOD NEWS
-            </b>
-            <p>
-                Stay in the loop with WAYGOOD neighbourhood<br>news. We promise we’ll be in touch for exciting<br>reasons only.
-            </p>
+        <div class="neigh" id="neigh">
+            <b id="news"></b>
+            <p id="budte"></p>
             <div class="blocki">
                 <div class="block">
                 </div>
@@ -172,7 +154,7 @@
                 </div>
                 <div class="block">
                 </div>
-                <button class="blockbutton">JOIN US</button>
+                <button class="blockbutton" id="join"></button>
             </div>
         </div>
         <div class="itsallin">
@@ -180,12 +162,12 @@
             </div>
             <div class="elementsitsallin">
                 <div class="textitsallin">
-                    <b>OUR OTHER VENUES</b>
-                    <h2>IT’S ALL IN THE FAMILY</h2>
+                    <b id="drugoe"></b>
+                    <h2 id="vse"></h2>
                     <div class="textintext">
-                        <p>Meet WAYGOOD’s sister:</p>
-                        <p>a late-night underground cocktail bar and events space celebrating women producers and artisans.</p>
-                        <p>is a pioneer of laneway dining in Melbourne and has been a favourite among theatre-goers, wine-lovers and long-lunchers since 1995.</p>
+                        <p id="znak"></p>
+                        <p id="noch"></p>
+                        <p id="ja"></p>
                     </div>
                 </div>
                 <div class="julpun">
@@ -196,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <div class="diners">
+        <div class="diners" id="diners">
             <div class="elemdiners">
                 <div class="choice">
                 </div>
@@ -213,8 +195,8 @@
                     <p>FACEBOOK</p>
                 </div>
                 <div class="textintextdiners">
-                    <p>Tuesday - Thursday 4pm - 11pm</p>
-                    <p>Friday & Saturday 12pm till late</p>
+                    <p id="vtornkib"></p>
+                    <p id="pat"></p>
                 </div>
             </div>
         </div>
@@ -225,18 +207,22 @@
         <div class="textfooter">
             <div class="uptextfooter">
                 <div class="contactus">
-                    <h3>CONTACT US</h3>
+                    <h3 id="svjaz"></h3>
                     <div class="textcontactus">
-                        <p>To get in touch, visit our</p>
-                        <p>. For employment opportunities,</p>
-                        <p>current vacancies.</p>
+                        <p id="chtob"></p>
+                        <р id="dlya"></p>
+                        <p id="tek"></p>
+                        <a href="https://mail.google.com/mail/u/0/#inbox">VladNeckt@gmail.com</a>
+                        <a href="tel:+375296081350" id="poz"></a>
+                        <a href="https://github.com/DoniZefironi">github</a>
+                        <a href="geo:53.9081, 30.3439" id="openkart"></a>
                     </div>
                 </div>
                 <div class="opening">
-                    <h3>OPENING HOURS</h3>
+                    <h3 id="chas"></h3>
                     <div class="textopening">
-                        <p>Tuesday - Thursday 4pm - 11pm</p>
-                        <p>Friday & Saturday 12pm till late</p>
+                        <p id="vtornkib"></p>
+                        <p id="pat"></p>
                     </div>
                 </div>
                 <div class="socials">
@@ -247,9 +233,9 @@
             </div>
             <div class="downfooter">
                 <p>© 2022 WAYGOOD</p>
-                <p>Words by Mia Barry</p>
-                <p>Photography by Kris Paulsen</p>
-                <p>Design by After Hours Studio</p>
+                <p id="slova"></p>
+                <p id="photo"></p>
+                <p id="disain"></p>
             </div>
         </div>
     </footer>
