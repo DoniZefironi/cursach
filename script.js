@@ -107,6 +107,7 @@ fetch('slides.json')
       document.getElementById("drinkmen").innerHTML = translation.drinkmen;
       document.getElementById("contact").innerHTML = translation.contact;
       document.getElementById("vauncher").innerHTML = translation.vauncher;
+      document.getElementById("vaunchers").innerHTML = translation.vaunchers;
       document.getElementById("reserv").innerHTML = translation.reserv;
       document.getElementById("reservi").innerHTML = translation.reservi;
       document.getElementById("mesto").innerHTML = translation.mesto;
@@ -116,6 +117,7 @@ fetch('slides.json')
       document.getElementById("jivot").innerHTML = translation.jivot;
       document.getElementById("nashemenu").innerHTML = translation.nashemenu;
       document.getElementById("vievmenu").innerHTML = translation.vievmenu;
+      document.getElementById("back").innerHTML = translation.back;
       document.getElementById("noback").innerHTML = translation.noback;
       document.getElementById("mi").innerHTML = translation.mi;
       document.getElementById("nujen").innerHTML = translation.nujen;
@@ -123,7 +125,6 @@ fetch('slides.json')
       document.getElementById("news").innerHTML = translation.news;
       document.getElementById("budte").innerHTML = translation.budte;
       document.getElementById("join").innerHTML = translation.join;
-      document.getElementById("pat").innerHTML = translation.pat;
       document.getElementById("esli").innerHTML = translation.esli;
       document.getElementById("real").innerHTML = translation.real;
       document.getElementById("vino").innerHTML = translation.vino;
@@ -133,6 +134,9 @@ fetch('slides.json')
       document.getElementById("ja").innerHTML = translation.ja;
       document.getElementById("noch").innerHTML = translation.noch;
       document.getElementById("vtornkib").innerHTML = translation.vtornkib;
+      document.getElementById("pat").innerHTML = translation.pat;
+      document.getElementById("vtornkib1").innerHTML = translation.vtornkib;
+      document.getElementById("pat1").innerHTML = translation.pat;
       document.getElementById("svjaz").innerHTML = translation.svjaz;
       document.getElementById("chtob").innerHTML = translation.chtob;
       document.getElementById("dlya").innerHTML = translation.dlya;
@@ -163,6 +167,7 @@ fetch('slides.json')
     document.getElementById("drinkmen").innerHTML = initialTranslation.drinkmen;
     document.getElementById("contact").innerHTML = initialTranslation.contact;
     document.getElementById("vauncher").innerHTML = initialTranslation.vauncher;
+    document.getElementById("vaunchers").innerHTML = initialTranslation.vaunchers;
     document.getElementById("reserv").innerHTML = initialTranslation.reserv;
     document.getElementById("reservi").innerHTML = initialTranslation.reservi;
     document.getElementById("mesto").innerHTML = initialTranslation.mesto;
@@ -173,6 +178,7 @@ fetch('slides.json')
     document.getElementById("nashemenu").innerHTML = initialTranslation.nashemenu;
     document.getElementById("vievmenu").innerHTML = initialTranslation.vievmenu;
     document.getElementById("noback").innerHTML = initialTranslation.noback;
+    document.getElementById("back").innerHTML = initialTranslation.back;
     document.getElementById("mi").innerHTML = initialTranslation.mi;
     document.getElementById("nujen").innerHTML = initialTranslation.nujen;
     document.getElementById("gift").innerHTML = initialTranslation.gift;
@@ -182,13 +188,15 @@ fetch('slides.json')
     document.getElementById("real").innerHTML = initialTranslation.real;
     document.getElementById("drugoe").innerHTML = initialTranslation.drugoe;
     document.getElementById("vse").innerHTML = initialTranslation.vse;
-    document.getElementById("pat").innerHTML = initialTranslation.pat;
     document.getElementById("esli").innerHTML = initialTranslation.esli;
     document.getElementById("vino").innerHTML = initialTranslation.vino;
     document.getElementById("znak").innerHTML = initialTranslation.znak;
     document.getElementById("ja").innerHTML = initialTranslation.ja;
     document.getElementById("noch").innerHTML = initialTranslation.noch;
     document.getElementById("vtornkib").innerHTML = initialTranslation.vtornkib;
+    document.getElementById("pat").innerHTML = initialTranslation.pat;
+    document.getElementById("vtornkib1").innerHTML = initialTranslation.vtornkib;
+    document.getElementById("pat1").innerHTML = initialTranslation.pat;
     document.getElementById("svjaz").innerHTML = initialTranslation.svjaz;
     document.getElementById("chtob").innerHTML = initialTranslation.chtob;
     document.getElementById("dlya").innerHTML = initialTranslation.dlya;
