@@ -1,7 +1,13 @@
 body{
     padding: 0;
     margin: auto;
+    background-color: #FAF5E5; 
+    color: #000;
 }
+  body.dark {
+    background-color: #000; 
+    color: #fff;
+  }
 body p{
     margin: 0;
 }
@@ -10,7 +16,6 @@ body h2{
 }
 header{
     position: relative;
-    background: #FAF5E5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +24,20 @@ header{
     padding-bottom: 11px;
     padding-left: 20px;
     gap: 100px;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slideInTop 1s forwards;
 }
+@keyframes slideInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 header::after {
     content: '';
     position: absolute;
@@ -32,8 +50,17 @@ header::after {
 header h1{
     font-size: 200%;
     margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
-
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 .navigat ul {
     list-style-type: none;
     margin: 0;
@@ -58,15 +85,41 @@ text-align: left;
     width: 50px;
     height: 20px;
 }
-main{
-    background: #FAF5E5;
+#languageButton{
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
 }
+#languageButton:hover {
+    background-color: #aa5959;
+  }
+  #themeButton{
+    transition: transform 0.3s ease;
+  }
+  #themeButton:active {
+    transform: scale(0.9);
+  }
+  main{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+  }
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 .place{
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
+
 .placetext{
     margin-left: 34px;
 width: 44%;
@@ -80,7 +133,11 @@ gap: 80px;
     font-size: 300%;
     text-align: center;
     line-height: 60px;
+    transition: font-size 0.3s ease;
 }
+.placetext h2:hover {
+    font-size: 320%;
+  }
 .placete{
     display: flex;
 align-items: center;
@@ -93,12 +150,18 @@ flex-direction: column;
 .imgplace{
     content: url("image/place.png");
     width: 100%;
+    transition: width 0.3s ease, height 0.3s ease;
 }
+.imgplace:hover {
+    width: 150%;
+  }
 .placeimg{
     content: url("image/placebottom.png");
     width: 34%;
 }
-
+body.dark .placeimg{
+    filter: invert(1);
+}
 .gheter{
     display: flex;
     justify-content: center;
@@ -128,6 +191,9 @@ flex-direction: column;
     content: url("image/gheter.png");
     width: 44%; 
 }
+body.dark .gheterimg{
+    filter: invert(1);
+}
 .gheter_start h2{
     font-size: 300%;
     text-align: center;
@@ -136,7 +202,12 @@ flex-direction: column;
     font-size: 110%;
     text-align: center;
     margin-left: 40px;
+    opacity: 1;
+    transition: opacity 1s;
 }
+.gheter_start p:hover {
+    opacity: 0.5;
+  }
 .gheter_end{
     display: flex;
     justify-content: center;
@@ -149,12 +220,21 @@ flex-direction: column;
 .gheter_end p{
     font-size: 190%;
     margin-right: 26px;
+    animation: bounce 1s;
 }
 .gheter_end h3{
     font-size: 90%;
     margin-right: 16px;
     position: relative;
 }
+@keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
 .gheter_end h3::after {
     content: '';
     position: absolute;
@@ -311,10 +391,18 @@ padding-top: 50px;
 padding-left: 100px;
 gap: 139px;
 }
+body.dark .honest {
+    background-color: #1a0e09; 
+    color: #fff;
+  }
 .slider {
   position: relative;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .slides-container {
@@ -393,7 +481,9 @@ text-align: center;
     content: url("image/IMAGE.png");
     width: 30.5%; 
 }
-
+body.dark .bottomhonest{
+    filter: invert(1);
+}
 .need{
     display: flex;
 justify-content: space-around;
@@ -477,6 +567,9 @@ text-align: left;
     width: 244px;
     height: 38px;
 }
+body.dark .block{
+    border: 1px solid rgb(255, 255, 255);
+}
 .blockbutton{
     height: 22px;
     background-color: black;
@@ -554,6 +647,9 @@ text-align: left;
 .punch{
     content: url("image/punch.png");
 }
+body.dark .punch{
+    filter: invert(1);
+}
 .diners{
     display: flex;
     justify-content: center;
@@ -591,6 +687,9 @@ text-align: center;
 .imgdiners{
     content: url("image/chto.png");
 }
+body.dark .imgdiners{
+    filter: invert(1);
+}
 .textdiners{
     display: flex;
     justify-content: center;
@@ -626,10 +725,30 @@ footer{
     flex-direction: row;
     background-color: #FFD36B;
     padding-bottom: 6px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideInBottom 1s forwards;
 }
+@keyframes slideInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+body.dark footer {
+    background-color: #352c18; 
+    color: #fff;
+  }
 .imgfooter{
     content: url("image/placebottom.png");
     margin-top: 36px;
+}
+body.dark .imgfooter{
+    filter: invert(1);
 }
 .textfooter{
     display: flex;
@@ -759,6 +878,31 @@ font-size: 34px;
         padding-top: 6px;
         display: inline-block;
         cursor: pointer;
+      }
+      body.dark .burger-menu span{
+        background-color: #fff;
+      }
+    
+      .burger {
+        display: block; 
+      }
+    
+      .navigat.open {
+        display: flex; 
+        position: absolute;
+        z-index: 9999;
+        top: 100%;
+        right: 10px;
+        width: 15%;
+        background-color: #fff;
+        padding: 20px;
+      }
+      .navigat.open ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
       }
       
       .burger-menu span {
