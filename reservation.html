@@ -9,21 +9,39 @@
 <body>
     <header>
         <h1>WAYGOOD</h1>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav class="navigat">
+            <ul>
+                <li><a href="#place" id="home"></a></li>
+                <li><a href="#gheter" id="about"></a></li>
+                <li><a href="#themenu" id="menu"></a></li>
+                <li><a href="#honest" id="drinkmenu"></a></li>
+                <li><a href="#diners" id="contact"></a></li>
+                <li><a href="#neigh" id="vauncher"></a></li>
+                <li><a href="#bookin" id="reserv"></a></li>
+                <button id="languageButton" onclick="changeLanguage()">English</button>
+                <button id="themeButton">Переключить тему</button>
+              </ul>
+        </nav>
     </header>
     <main>
         <div class="reserv">
             <div class="reserv">
-                <h2>Бронирование столов</h2>
+                <h2 id="bronstol">Бронирование столов</h2>
                 <p>+375 29 608-13-50</p>
             </div>
-            <button class="butreserv">
+            <button class="butreserv" id="bronirovan">
                 Бронирование
             </button>
         </div>
         <div class="text">
-                <h2>Бронирование столика и доставка</h2>
+                <h2 id="stol">Бронирование столика и доставка</h2>
             <div class="textintext">
-                <p>Мы предлагаем нашим посетителям возможность бронирования столика в нашем ресторане и доставки наших блюд и напитков.<br>
+                <p id="mipredlog">Мы предлагаем нашим посетителям возможность бронирования столика в нашем ресторане и доставки наших блюд и напитков.<br>
                     Если вы хотите провести приятное время в нашем стильном и уютном ресторане, мы рады предложить вам услугу бронирования столика. Вы можете заранее забронировать столик, чтобы быть уверенными, что будете иметь удобное место для проведения времени в нашем заведении. Просто позвоните нам по следующему номеру:<br>
                     Для бронирования столика в ресторане: 80222 65-65-68<br>
                     Наши сотрудники помогут вам выбрать удобное время и подобрать наиболее подходящий столик для вашей компании. Мы стремимся сделать ваше посещение нашего ресторана приятным и комфортным.<br>
@@ -32,11 +50,10 @@
                     Мы постараемся сделать все возможное, чтобы ваш заказ был доставлен вовремя и соответствовал вашим ожиданиям.</p>
             </div>
             <div class="buttontext">
-                <button class="butreserv">
+                <button class="butreserv" id="bronirov">
                     Бронирование
                 </button>
-                <button class="butreserv">
-                    Доставка
+                <button class="butreserv" id="dostavka">
                 </button>
             </div>
         </div>
@@ -47,33 +64,38 @@
         <div class="textfooter">
             <div class="uptextfooter">
                 <div class="contactus">
-                    <h3>CONTACT US</h3>
+                    <h3 id="svjaz"></h3>
                     <div class="textcontactus">
-                        <p>To get in touch, visit our</p>
-                        <p>. For employment opportunities,</p>
-                        <p>current vacancies.</p>
+                        <p id="chtob"></p>
+                        <p id="dlya"></p>
+                        <p id="tek"></p>
+                        <a href="https://mail.google.com/mail/u/0/#inbox">VladNeckt@gmail.com</a>
+                        <a href="tel:+375296081350" id="poz"></a>
+                        <a href="https://github.com/DoniZefironi">github</a>
+                        <a href="geo:53.9081, 30.3439" id="openkart"></a>
                     </div>
                 </div>
                 <div class="opening">
-                    <h3>OPENING HOURS</h3>
+                    <h3 id="chas"></h3>
                     <div class="textopening">
-                        <p>Tuesday - Thursday 4pm - 11pm</p>
-                        <p>Friday & Saturday 12pm till late</p>
+                        <p id="vtornkib1"></p>
+                        <p id="pat1"></p>
                     </div>
                 </div>
                 <div class="socials">
-                    <h3>SOCIALS</h3>
+                    <h3 id="socialen"></h3>
                     <p>INSTAGRAM</p>
                     <p>FACEBOOK</p>
                 </div>
             </div>
             <div class="downfooter">
                 <p>© 2022 WAYGOOD</p>
-                <p>Words by Mia Barry</p>
-                <p>Photography by Kris Paulsen</p>
-                <p>Design by After Hours Studio</p>
+                <p id="slova"></p>
+                <p id="photo"></p>
+                <p id="disain"></p>
             </div>
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

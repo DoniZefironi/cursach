@@ -49,6 +49,8 @@
       "slova": "Words by Mia Barry",
       "photo": "Photography by Chris Paulsen",
       "disain": "Design by After Hours Studio",
+      "socialen": "SOCIALS",
+      "dostavka": "Delivery",
       "button": "EN"
     },
     "ru": {
@@ -101,6 +103,8 @@
       "slova": "Слова Мии Бэрри",
       "photo": "Фотография Криса Полсена",
       "disain": "Дизайн студии After Hours Studio",
+      "socialen": "Соц.Сети",
+      "dostavka": "Доставка",
       "button": "RU"
     }
   }

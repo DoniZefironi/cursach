@@ -1,101 +1,3 @@
-const viewimg = document.querySelector('.viewimg');
-const images = viewimg.querySelectorAll('img');
-let currentIndex = 0;
-
-images[currentIndex].classList.add('active');
-
-viewimg.addEventListener('click', () => {
-  images[currentIndex].classList.remove('active');
-  currentIndex = (currentIndex + 1) % images.length;
-  images[currentIndex].classList.add('active');
-});
-
-
-
-const slider = document.querySelector('.slider');
-const slidesContainer = slider.querySelector('.slides-container');
-const prevButton = slider.querySelector('.prev');
-const nextButton = slider.querySelector('.next');
-const currentSlide = slider.querySelector('.current-slide');
-const totalSlides = slider.querySelector('.total-slides');
-
-let slidesData; 
-let currentIndex1 = 0;
-
-fetch('slides.json')
-  .then(response => response.json())
-  .then(data => {
-    slidesData = data.slides;
-    totalSlides.textContent = slidesData.length;
-
-    prevButton.addEventListener('click', () => {
-      changeSlide(currentIndex1 - 1);
-    });
-
-    nextButton.addEventListener('click', () => {
-      changeSlide(currentIndex1 + 1);
-    });
-
-    function changeSlide(index) {
-      if (index < 0) {
-        index = slidesData.length - 1;
-      } else if (index >= slidesData.length) {
-        index = 0; 
-      }
-
-      currentIndex1 = index;
-      showSlide(currentIndex1);
-      updatePagination();
-    }
-
-    function showSlide(index) {
-      const slide = slidesData[index];
-      slidesContainer.innerHTML = `
-        <img src="${slide.src}" alt="${slide.alt}">
-      `;
-    }
-
-    function updatePagination() {
-      currentSlide.textContent = currentIndex1 + 1;
-    }
-
-    showSlide(currentIndex1);
-    updatePagination();
-  })
-  .catch(error => {
-    console.error('Ошибка загрузки JSON-файла:', error);
-  });
-
-
-
-  var burger = document.querySelector('.burger-menu');
-  var navigat = document.querySelector('.navigat');
-  
-  burger.addEventListener('click', function() {
-    navigat.classList.toggle('open'); 
-  });
-
-
-
-  var themeButton = document.getElementById("themeButton");
-  var body = document.body;
-  var honest = document.getElementsByClassName("honest");
-  var footer = document.getElementsByClassName("footer");
-  
-  themeButton.addEventListener("click", function() {
-    body.classList.toggle("dark");
-    honest.classList.toggle("dark");
-    footer.classList.toggle("dark");
-  
-    if (body.classList.contains("dark")) {
-      themeButton.textContent = "Светлая тема";
-    } else {
-      themeButton.textContent = "Темная тема";
-    }
-  });
-
-
-
   var translations = {};
 
   function loadTranslations(callback) {
@@ -175,6 +77,8 @@ fetch('slides.json')
       document.getElementById("slova").innerHTML = translation.slova;
       document.getElementById("photo").innerHTML = translation.photo;
       document.getElementById("disain").innerHTML = translation.disain;
+      document.getElementById("socialen").innerHTML = translation.socialen;
+      document.getElementById("dostavka").innerHTML = translation.dostavka;
     } else {
       console.error("Перевод недоступен для выбранного языка.");
     }
@@ -235,4 +139,5 @@ fetch('slides.json')
     document.getElementById("slova").innerHTML = initialTranslation.slova;
     document.getElementById("photo").innerHTML = initialTranslation.photo;
     document.getElementById("disain").innerHTML = initialTranslation.disain;
+    document.getElementById("dostavka").innerHTML = initialTranslation.dostavka;
   });

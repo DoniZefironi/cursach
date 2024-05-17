@@ -5,7 +5,7 @@ body{
     color: #000;
 }
   body.dark {
-    background-color: #000; 
+    background-color: #1a0e09bb; 
     color: #fff;
   }
 body p{
@@ -80,6 +80,10 @@ font-weight: 400;
 line-height: 20px;
 letter-spacing: 0em;
 text-align: left;
+color: #000;
+  }
+  body.dark .navigat a{
+    color: #fff;
   }
 .language{
     width: 50px;
@@ -392,7 +396,7 @@ padding-left: 100px;
 gap: 139px;
 }
 body.dark .honest {
-    background-color: #1a0e09; 
+    background-color: #1a0e09bb; 
     color: #fff;
   }
 .slider {
