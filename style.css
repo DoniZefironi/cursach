@@ -780,6 +780,10 @@ body.dark .imgfooter{
     align-items: start;
     flex-direction: column;
 }
+.textcontactus a{
+    text-decoration: none;
+    color: inherit;
+}
 .opening{
     display: flex;
     justify-content: center;
