@@ -1,33 +1,21 @@
 var themeButton = document.getElementById("themeButton");
-var body = document.body;
-var honest = document.getElementsByClassName("honest")[0];
-var footer = document.getElementsByClassName("footer")[0];
+  var body = document.body;
+  var honest = document.getElementsByClassName("honest");
 
-var savedTheme = localStorage.getItem("theme");
-
-if (savedTheme) {
-  body.classList.add(savedTheme);
-  honest.classList.add(savedTheme);
-  footer.classList.add(savedTheme);
-
-  if (savedTheme === "dark") {
-    themeButton.textContent = "Светлая тема";
-  } else {
-    themeButton.textContent = "Темная тема";
-  }
+function toggleTheme() {
+  localStorage.setItem('body-theme','light')
+body.classList.toggle("dark");
+if (body.classList.contains("dark")) {
+  localStorage.setItem('body-theme','dark')
+} else {
+  localStorage.setItem('body-theme','light')
 }
 
-themeButton.addEventListener("click", function() {
-  localStorage.setItem("theme", "dark");
-  body.classList.toggle("dark");
-  honest.classList.toggle("dark");
-  footer.classList.toggle("dark");
-
-  if (body.classList.contains("dark")) {
-
-    themeButton.textContent = "Светлая тема";
-  } else {
-    localStorage.setItem("theme", "light");
-    themeButton.textContent = "Темная тема";
-  }
-});
+}
+if (localStorage.getItem('body-theme') === 'dark')
+    {
+      body.classList.toggle("dark");
+    }
+    else{
+      body.classList.remove("dark");
+    }
