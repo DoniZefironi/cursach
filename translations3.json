@@ -1,5 +1,5 @@
 {
-    "translations": {
+    "en": {
         "home": "HOME",
         "about": "ABOUT US",
         "drinkmenu": "DRINKS MENU",
@@ -38,9 +38,11 @@
         "disain": "Design by After Hours Studio",
         "socialen": "SOCIALS",
       "themeButton": "Switch topic",
+      "sign": "Sign Up",
+      "aut":"Authorization",
       "translateButton": "EN"
     },
-    "originalTexts": {
+    "ru": {
         "home": "ДОМ",
         "about": "О НАС",
         "drinkmenu": "МЕНЮ НАПИТКОВ",
@@ -79,6 +81,8 @@
         "disain": "Дизайн студии After Hours Studio",
         "socialen": "Соц.Сети",
         "themeButton": "Переключить тему",
+        "signup": "Регистрация",
+        "aut":"Авторизация",
         "translateButton": "RU"
     }
   }

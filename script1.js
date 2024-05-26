@@ -1,46 +1,52 @@
-let translations = {}; // Переводы хранятся в этой переменной
-let originalTexts = {}; // Оригинальные тексты хранятся в этой переменной
-let isTranslated = false; // Флаг, указывающий, переведена ли страница в данный момент
-
-function applyTranslations(translations) {
-  for (let key in translations) {
-    if (translations.hasOwnProperty(key)) {
-      const element = document.getElementById(key);
-      if (element) {
-        element.textContent = translations[key];
-      }
-    }
-  }
-}
+var translations = {};
 
 function loadTranslations() {
-  fetch('translations1.json')
+  return fetch('translations1.json')
     .then(response => response.json())
     .then(data => {
-      translations = data.translations;
-      originalTexts = data.originalTexts;
-      applyTranslations(originalTexts); // Применяем оригинальные тексты при загрузке
+      translations = data;
     })
-    .catch(error => {
-      console.log('Произошла ошибка при загрузке переводов:', error);
-    });
+    .catch(error => console.error('Error loading translations:', error));
 }
 
-function translatePage() {
-  if (isTranslated) {
-    // Переводим обратно на оригинальные тексты
-    applyTranslations(originalTexts);
-    isTranslated = false;
+function toggleLanguage() {
+  var currentLanguage = document.documentElement.lang || 'en';
+  localStorage.setItem('language','en');
+  if (currentLanguage === 'en') {
+    applyTranslations('ru');
+    document.documentElement.lang = 'ru';
+    document.getElementById('languageButton').textContent = 'Русский';
+    localStorage.setItem('language','ru');
   } else {
-    // Переводим на тексты из JSON-файла
-    applyTranslations(translations);
-    isTranslated = true;
+    applyTranslations('en');
+    document.documentElement.lang = 'en';
+    document.getElementById('languageButton').textContent = 'English';
+    localStorage.setItem('language','en');
   }
 }
 
-// Загрузка переводов и оригинальных текстов при загрузке страницы
-window.addEventListener('DOMContentLoaded', () => {
-  const translateButton = document.getElementById('translateButton');
-  translateButton.addEventListener('click', translatePage);
-  loadTranslations();
+function applyTranslations(lang) {
+  var translation = translations[lang];
+
+  var elements = document.querySelectorAll('[id]');
+  elements.forEach(function(element) {
+    var translationKey = element.getAttribute('id');
+    if (translationKey && translation[translationKey]) {
+      element.innerHTML = translation[translationKey];
+    }
+  });
+}
+
+loadTranslations().then(() => {
+  var userLanguage = navigator.language.substr(0, 2); 
+  if (localStorage.getItem('language')==='en') {
+    applyTranslations('en');
+    document.documentElement.lang = 'en';
+    document.getElementById('languageButton').textContent = 'English';
+    
+  } else {
+    applyTranslations('ru');
+    document.documentElement.lang = 'ru';
+    document.getElementById('languageButton').textContent = 'Русский';
+  }
 });

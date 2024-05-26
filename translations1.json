@@ -1,5 +1,5 @@
 {
-    "translations": {
+    "en": {
       "greeting": "GATHER IN<br>GOOD<br>COMPANY",
       "description": "WAYGOOD is a meeting place for the residents of Richmond<br>(and everyone else). We've taken the best of<br>a bottle shop and a local eatery<br>and mixed them together. Drop by for a drink,<br>stay for a bite, or grab a bottle on the go.",
       "home": "HOME",
@@ -57,9 +57,11 @@
       "stol": "Table reservation and delivery",
       "bronstol": "Table reservations",
       "themeButton": "Switch topic",
+      "sign": "Sign Up",
+      "aut":"Authorization",
       "translateButton": "EN"
     },
-    "originalTexts": {
+    "ru": {
         "greeting": "СОБЕРИТЕСЬ В<br>ХОРОШЕЙ<br>КОМПАНИИ",
         "description": "WAYGOOD — место встречи жителей Ричмонда.<br>(и все остальные). Мы взяли лучшее из<br>магазина бутылок и местной закусочной<br>и смешали их вместе. Загляните сюда, чтобы выпить,<br>остайтесь, чтобы перекусить, или возьмите бутылку на ходу.",
         "home": "ДОМ",
@@ -117,6 +119,8 @@
         "stol": "Бронирование столика и доставка",
         "bronstol": "Бронирование столов",
         "themeButton": "Переключить тему",
+        "signup": "Регистрация",
+        "aut":"Авторизация",
         "translateButton": "RU"
     }
   }

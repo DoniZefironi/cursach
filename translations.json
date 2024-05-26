@@ -57,6 +57,8 @@
       "stol": "Table reservation and delivery",
       "bronstol": "Table reservations",
       "themeButton": "Switch topic",
+      "sign": "Sign Up",
+      "aut":"Authorization",
       "button": "EN"
     },
     "ru": {
@@ -117,6 +119,8 @@
       "stol": "Бронирование столика и доставка",
       "bronstol": "Бронирование столов",
       "themeButton": "Переключить тему",
+      "signup": "Регистрация",
+      "aut":"Авторизация",
       "button": "RU"
     }
   }

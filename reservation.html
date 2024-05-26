@@ -9,24 +9,26 @@
 <body>
     <header>
         <h1>WAYGOOD</h1>
-        <div class="burger-menu">
+        <div class="burger-menu" id="burgerMenu">
             <span></span>
             <span></span>
             <span></span>
           </div>
-        <nav class="navigat">
-            <ul>
-                <li><a href="#place" id="home"></a></li>
-                <li><a href="#gheter" id="about"></a></li>
-                <li><a href="#themenu" id="menu"></a></li>
-                <li><a href="#honest" id="drinkmenu"></a></li>
-                <li><a href="#diners" id="contact"></a></li>
-                <li><a href="#neigh" id="vauncher"></a></li>
-                <li><a href="#bookin" id="reserv"></a></li>
-                <button id="translateButton"></button>
+          <div class="header-block1" id="headerBlock">
+            <nav class="header-nav">
+                <a href="#place" id="home"></a>
+                <a href="#gheter" id="about"></a>
+                <a href="#themenu" id="menu"></a>
+                <a href="#honest" id="drinkmenu"></a>
+                <a href="#diners" id="contact"></a>
+                <a href="#neigh" id="vauncher"></a>
+                <a href="#bookin" id="reserv"></a>
+                <button id="languageButton" onclick="toggleLanguage()">English</button>
                 <button id="themeButton" onclick="toggleTheme()">Переключить тему</button>
-              </ul>
-        </nav>
+                <button class="block-sign" id="sign"></button>
+                <button class="block-sign" id="aut"></button>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="reserv">
@@ -87,4 +89,7 @@
 </body>
 <script src="script1.js"></script>
 <script src="tema1.js"></script>
+<script src="burger.js"></script>
+<script src="scripts.js"></script>
+<script src="transition.js"></script>
 </html>
