@@ -491,6 +491,35 @@ gap: 44px;
 body.dark .block-sign{
     border: 0.5px solid #000000;
     background-color: #000000;
+    color: #FAF5E5;
+}
+#bron{
+    text-decoration: none;
+    color: #000;
+}
+body.dark #bron{
+    color: #ffff;
+}
+#vievmenu{
+    text-decoration: none;
+    color: #000;
+}
+body.dark #vievmenu{
+    color: #ffff;
+}
+#reservi{
+    text-decoration: none;
+    color: #000;
+}
+body.dark #reservi{
+    color: #ffff;
+}
+#drinkmen{
+    text-decoration: none;
+    color: #000;
+}
+body.dark #drinkmen{
+    color: #ffff;
 }
 .textneed h2{
     font-family: Roboto;
