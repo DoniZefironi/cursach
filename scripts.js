@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
   
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('kmotkmobtrkmotr.html')) {
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('menu.html') || window.location.pathname.endsWith('drinklist.html') || window.location.pathname.endsWith('reservation.html')) {
         displayContentBasedOnRole();
     }
   });

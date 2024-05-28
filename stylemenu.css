@@ -397,4 +397,7 @@ body.dark .imgfooter{
 .countbuy{
     gap: 140px;
 }
+.imgfooter{
+    display: none;
+}
 }

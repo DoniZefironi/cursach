@@ -337,6 +337,9 @@ body.dark .imgfooter{
     .drink{
         width: 310px;
     }
+    .imgfooter{
+        display: none;
+    }
 }
 @media (max-width: 340px) {
     .drink{
