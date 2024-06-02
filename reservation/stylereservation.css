@@ -3,7 +3,7 @@ body{
     gap: 50px;
     margin: 0;
     flex-direction: column;
-    background-image: url("image/reserv.png");
+    background-image: url("/general/image/reserv.png");
     padding: 0px 18px 18px 18px;
 }
 body.dark{
@@ -153,7 +153,7 @@ body.dark footer {
     color: #fff;
   }
 .imgfooter{
-    content: url("image/placebottom.png");
+    content: url("/general/image/placebottom.png");
     margin-top: 36px;
 }
 body.dark .imgfooter{
