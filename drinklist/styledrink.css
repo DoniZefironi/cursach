@@ -232,6 +232,23 @@ body.dark .imgfooter{
     align-items: start;
     flex-direction: column;
 }
+.ah1a{
+    font-size: 2em; /* Размер шрифта h1 обычно 2em    */
+    font-weight: bold; /* Bold font of h1 */
+    display: block; /* Выводить как блоковый элемент   */
+    margin-top: 0.67em; /* Маргины как у h1 */
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    color: #fff;
+}
+.block-sign{
+    margin-left: 33px;
+    padding: 0.5px 11px;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+}
 .downfooter{
     display: flex;
     justify-content: center;

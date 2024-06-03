@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (user) {
           messageDiv.textContent = 'Login successful!';
           sessionStorage.setItem('loggedInUser', JSON.stringify(user));
-          window.location.href = 'index.html';
+          window.location.href = '/glav/index.html';
         } else {
           messageDiv.textContent = 'Invalid email or password.';
         }
@@ -135,8 +135,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
   
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('menu.html') || window.location.pathname.endsWith('drinklist.html') || window.location.pathname.endsWith('reservation.html')) {
+    if (window.location.pathname.endsWith('/glav/index.html') || window.location.pathname.endsWith('menu.html') || window.location.pathname.endsWith('drinklist.html') || window.location.pathname.endsWith('reservation.html')) {
         displayContentBasedOnRole();
+    }
+    if (passwordChoice.value === 'manual') {
+      manualPasswordFields.style.display = 'block';
+    } else {
+      manualPasswordFields.style.display = 'none';
     }
   });
   
