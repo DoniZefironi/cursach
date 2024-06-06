@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="stylereservation.css">
+</head>
+<body>
+    <header>
+        <a class="ah1a" href="/glav/index.html">WAYGOOD</a>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header-block1" id="headerBlock">
+            <nav class="header-nav">
+                <a href="/glav/index.html" id="home"></a>
+                <a href="/glav/index.html" id="about"></a>
+                <a href="/glav/index.html" id="menus"></a>
+                <a href="/glav/index.html" id="drinkmenu"></a>
+                <a href="/glav/index.html" id="contact"></a>
+                <a href="/glav/index.html" id="vauncher"></a>
+                <a href="/glav/index.html" id="reserv"></a>
+                <button class="block-sign" id="languageButton" onclick="toggleLanguage()">English</button>
+                <button class="block-sign" id="themeButton" onclick="toggleTheme()">Переключить тему</button>
+                <button class="block-sign" id="sign"></button>
+                <button class="block-sign" id="aut"></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="reserv">
+            <div class="reserv">
+                <h2 id="bronstol"></h2>
+                <p>+375 29 608-13-50</p>
+            </div>
+            <button class="butreserv" id="bronirovan"></button>
+        </div>
+        <div class="text">
+                <h2 id="stol"></h2>
+            <div class="textintext">
+                <p id="mipredlog"></p>
+            </div>
+            <div class="buttontext">
+                <button class="butreserv" id="bronirov"></button>
+                <button class="butreserv" id="dostavka"></button>
+            </div>
+        </div>
+        <div class="admin-only" style="display: none;">
+            <h2>Admin Content</h2>
+            <p>This content is only visible to admin users.</p>
+          </div>
+    </main>
+    <footer>
+        <div class="imgfooter">
+        </div>
+        <div class="textfooter">
+            <div class="uptextfooter">
+                <div class="contactus">
+                    <h3 id="svjaz"></h3>
+                    <div class="textcontactus">
+                        <p id="chtob"></p>
+                        <p id="dlya"></p>
+                        <p id="tek"></p>
+                        <a href="https://mail.google.com/mail/u/0/#inbox">VladNeckt@gmail.com</a>
+                        <a href="tel:+375296081350" id="poz"></a>
+                        <a href="https://github.com/DoniZefironi">github</a>
+                    </div>
+                </div>
+                <div class="opening">
+                    <h3 id="chas"></h3>
+                    <div class="textopening">
+                        <p id="vtornkib1"></p>
+                        <p id="pat1"></p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <h3 id="socialen"></h3>
+                    <p>INSTAGRAM</p>
+                    <p>FACEBOOK</p>
+                </div>
+            </div>
+            <div class="downfooter">
+                <p>© 2022 WAYGOOD</p>
+                <p id="slova"></p>
+                <p id="photo"></p>
+                <p id="disain"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script1.js"></script>
+<script src="tema1.js"></script>
+<script src="/general/burger.js"></script>
+<script src="/general/scripts.js"></script>
+<script src="/general/transition.js"></script>
+</html>

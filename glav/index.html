@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAYGOOD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <a class="ah1a" href="/glav/index.html">WAYGOOD</a>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header-block1" id="headerBlock">
+            <nav class="header-nav">
+                <a href="#place" id="home"></a>
+                <a href="#gheter" id="about"></a>
+                <a href="#themenu" id="menus"></a>
+                <a href="#honest" id="drinkmenu"></a>
+                <a href="#diners" id="contact"></a>
+                <a href="#neigh" id="vauncher"></a>
+                <a href="#bookin" id="reserv"></a>
+                <button class="block-sign" id="languageButton" onclick="toggleLanguage()">English</button>
+                <button class="block-sign" id="themeButton" onclick="toggleTheme()">Переключить тему</button>
+                <button class="block-sign" id="sign"></button>
+                <button class="block-sign" id="aut"></button>
+                <span id="usernameDisplay" style="display: none;"></span>
+                <button class="block-sign" id="logout" style="display: none;">Logout</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="place" id="place">
+            <div class="placetext">
+                <div class="placete">
+                    <h2 id="mesto"></h2>
+                    <p id="ivse"></p>
+                </div>
+                <div class="placeimg">
+                </div>
+            </div>
+            <div class="imgplaceimg">
+                <div class="imgplace">
+                </div>
+            </div>
+        </div>
+        <div class="gheter" id="gheter">
+            <div class="gheter_start">
+                <div class="gheter_starttext">
+                    <h2 id="greeting"></h2>
+                    <p id="description"></p>
+                </div>
+                <div class="gheterimg">
+                </div>
+            </div>
+            <div class="gheter_end">
+                <div class="gheter_endtext">
+                   <p id="nashe"></p>
+                   <a href="/reservation/reservation.html" id="bron"></a>
+                </div>
+                <div class="gheterendimg">
+                </div>
+            </div>
+        </div>
+        <div class="themenu" id="themenu">
+            <div class="viewmenu">
+                <div class="textview">
+                    <div class="textinmenu">
+                        <b id="menu"></b>
+                        <h2 id="jivot"></h2>
+                        <p id="nashemenu"></p>
+                    </div>
+                    <a class="vtm" href="/menu/menu.html" id="vievmenu"></a>
+                </div>
+                <div class="viewimg">
+                    <img src="/general/image/1pos.png" alt="Изображение">
+                    <img src="/general/image/2pos.png" alt="Изображение">
+                    <img src="/general/image/3pos.png" alt="Изображение">
+                    <img src="/general/image/4pos.png" alt="Изображение">
+                    <img src="/general/image/5pos.png" alt="Изображение">
+                    <img src="/general/image/6pos.png" alt="Изображение">
+                    <img src="/general/image/1possnacks.png" alt="Изображение">
+                    <img src="/general/image/2possnacks.png" alt="Изображение">
+                    <img src="/general/image/3possnacks.png" alt="Изображение">
+                    <img src="/general/image/4possnacks.png" alt="Изображение">
+                    <img src="/general/image/5possnacks.png" alt="Изображение">
+                    <img src="/general/image/6possnacks.png" alt="Изображение">
+                    <img src="/general/image/7possnacks.png" alt="Изображение">
+                    <img src="/general/image/8possnacks.png" alt="Изображение">
+                    <img src="/general/image/9possnacks.png" alt="Изображение">
+                    <img src="/general/image/10possnacks.png" alt="Изображение">
+                    <img src="/general/image/11possnacks.png" alt="Изображение">
+                    <img src="/general/image/12possnacks.png" alt="Изображение">                    <img src="image/6possnacks.png" alt="Изображение">
+                    <img src="/general/image/1poshot.png" alt="Изображение">
+                    <img src="/general/image/2poshot.png" alt="Изображение">
+                    <img src="/general/image/3poshot.png" alt="Изображение">
+                    <img src="/general/image/4poshot.png" alt="Изображение">
+                    <img src="/general/image/5poshot.png" alt="Изображение">
+                    <img src="/general/image/6poshot.png" alt="Изображение">
+                    <img src="/general/image/7poshot.png" alt="Изображение">
+                    <img src="/general/image/8poshot.png" alt="Изображение">
+                    <img src="/general/image/9poshot.png" alt="Изображение">
+                    <img src="/general/image/10poshot.png" alt="Изображение">
+                    <img src="/general/image/11poshot.png" alt="Изображение">
+                </div>
+            </div>
+            <div class="bookin" id="bookin">
+                <div class="bookimg">
+                </div>
+                <div class="textbookin">
+                    <p id="esli"></p>
+                    <a href="/reservation/reservation.html" id="reservi"></a>
+                </div>
+            </div>
+        </div>
+        <div class="honest" id="honest">
+            <div class="slider">
+                <div class="slides-container"></div>
+                <div class="pagination">
+                  <button class="prev" id="back"></button>
+                  <span class="current-slide">1</span> / <span class="total-slides">14</span>
+                  <button class="next" id="noback"></button>
+                </div>
+              </div>
+            <div class="texthonest">
+                <div class="mintexthonest">
+                    <b id="vino"></b>
+                    <h2 id="real"></h2>
+                    <p id="mi"></p>
+                </div>
+                <a href="/drinklist/drinklist.html" id="drinkmen"></a>
+                <div class="bottomhonest">
+                </div>
+            </div>
+        </div>
+        <div class="need">
+            <div class="needimg">
+            </div>
+            <div class="textneed">
+                <b id="vaunchers"></b>
+                <h2 id="nujen"></h2>
+                <p id="gift"></p>
+            </div>
+        </div>
+        <div class="blocklazanya">
+            <div class="lazanya">
+            </div>
+        </div>
+        <div class="neigh" id="neigh">
+            <b id="news"></b>
+            <p id="budte"></p>
+            <div class="blocki">
+                <div class="block">
+                </div>
+                <div class="block">
+                </div>
+                <div class="block">
+                </div>
+                <button class="blockbutton" id="join"></button>
+            </div>
+        </div>
+        <div class="itsallin">
+            <div class="itsallinimg">
+            </div>
+            <div class="elementsitsallin">
+                <div class="textitsallin">
+                    <b id="drugoe"></b>
+                    <h2 id="vse"></h2>
+                    <div class="textintext">
+                        <p id="znak"></p>
+                        <p id="noch"></p>
+                        <p id="ja"></p>
+                    </div>
+                </div>
+                <div class="julpun">
+                    <div class="juliet">
+                    </div>
+                    <div class="punch">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="diners" id="diners">
+            <div class="elemdiners">
+                <div class="choice">
+                </div>
+                <div class="textchoice">
+                    <p>• 213 SWAN STREET, RICHMOND VIC 3121 •</p>
+                    <p>(03) 8456 0933</p>
+                </div>
+            </div>
+            <div class="textdiners">
+                <div class="imgdiners">
+                </div>
+                <div class="rowtextindiners">
+                    <p>INSTAGRAM</p>
+                    <p>FACEBOOK</p>
+                </div>
+                <div class="textintextdiners">
+                    <p id="vtornkib"></p>
+                    <p id="pat"></p>
+                </div>
+            </div>
+        </div>
+        <div class="admin-only" style="display: none;">
+            <h2>Admin Content</h2>
+            <p>This content is only visible to admin users.</p>
+          </div>
+    </main>
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="map"></div>
+        </div>
+      </div>
+    <footer>
+        <div class="imgfooter">
+        </div>
+        <div class="textfooter">
+            <div class="uptextfooter">
+                <div class="contactus">
+                    <h3 id="svjaz"></h3>
+                    <div class="textcontactus">
+                        <p id="chtob"></p>
+                        <p id="dlya"></p>
+                        <p id="tek"></p>
+                        <a href="https://mail.google.com/mail/u/0/#inbox">VladNeckt@gmail.com</a>
+                        <a href="tel:+375296081350" id="poz"></a>
+                        <a href="https://github.com/DoniZefironi">github</a>
+                        <a href="#" id="openkart"></a>
+                    </div>
+                </div>
+                <div class="opening">
+                    <h3 id="chas"></h3>
+                    <div class="textopening">
+                        <p id="vtornkib1"></p>
+                        <p id="pat1"></p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <h3 id="socialen"></h3>
+                    <p>INSTAGRAM</p>
+                    <p>FACEBOOK</p>
+                </div>
+            </div>
+            <div class="downfooter">
+                <p>© 2022 WAYGOOD</p>
+                <p id="slova"></p>
+                <p id="photo"></p>
+                <p id="disain"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="scripto.js"></script>
+<script src="slider.js"></script>
+<script src="imgslider.js"></script>
+<script src="/general/burger.js"></script>
+<script src="tema.js"></script>
+<script src="map.js"></script>
+<script src="/general/scripts.js"></script>
+<script src="/general/transition.js"></script>
+</html>
