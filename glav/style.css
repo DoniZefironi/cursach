@@ -503,6 +503,12 @@ body.dark .block-sign{
     background-color: #000000;
     color: #FAF5E5;
 }
+#usernameDisplay{
+    text-decoration: none;
+    color: #000000;
+    line-height: 1em;
+    font-size: 1em;
+}
 #bron{
     text-decoration: none;
     color: #000;

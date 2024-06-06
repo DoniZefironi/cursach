@@ -6,8 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateNicknameButton = document.getElementById('generateNickname');
     const nicknameInput = document.getElementById('nickname');
     const messageDiv = document.getElementById('message');
+    const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
     let nicknameAttempts = 0;
     const top100Passwords = ['123456', 'password',];
+    const logoutButton = document.getElementById('logout');
+    const signButton = document.getElementById('sign');
+    const autButton = document.getElementById('aut');
+    const usernameDisplay = document.getElementById('usernameDisplay');
   
     function isPasswordStrong(password) {
       const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,20}$/;
@@ -109,39 +114,50 @@ document.addEventListener('DOMContentLoaded', () => {
         if (user) {
           messageDiv.textContent = 'Login successful!';
           sessionStorage.setItem('loggedInUser', JSON.stringify(user));
+          displayContentBasedOnRole();
           window.location.href = '/glav/index.html';
         } else {
           messageDiv.textContent = 'Invalid email or password.';
         }
       });
     }
-  
     function displayContentBasedOnRole() {
-        const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
-        if (loggedInUser) {
-          if (loggedInUser.role === 'admin') {
-            const adminBlocks = document.querySelectorAll('.admin-only');
-            adminBlocks.forEach(block => block.style.display = 'block');
-    
-            const adminHiddenBlocks = document.querySelectorAll('.admin-hidden');
-            adminHiddenBlocks.forEach(block => block.style.display = 'none');
-          } else {
-            const adminBlocks = document.querySelectorAll('.admin-only');
-            adminBlocks.forEach(block => block.style.display = 'none');
-    
-            const adminHiddenBlocks = document.querySelectorAll('.admin-hidden');
-            adminHiddenBlocks.forEach(block => block.style.display = 'block');
-          }
+      usernameDisplay.textContent = 'Welcome, ' + loggedInUser.nickname;
+      usernameDisplay.style.display = 'inline';
+      logoutButton.style.display = 'inline';
+      signButton.style.display = 'none';
+      autButton.style.display = 'none';
+      if (loggedInUser) {
+        if (loggedInUser.role === 'admin') {
+          const adminBlocks = document.querySelectorAll('.admin-only');
+          adminBlocks.forEach(block => block.style.display = 'block');
+  
+          const adminHiddenBlocks = document.querySelectorAll('.admin-hidden');
+          adminHiddenBlocks.forEach(block => block.style.display = 'none');
+        } else {
+          const adminBlocks = document.querySelectorAll('.admin-only');
+          adminBlocks.forEach(block => block.style.display = 'none');
+  
+          const adminHiddenBlocks = document.querySelectorAll('.admin-hidden');
+          adminHiddenBlocks.forEach(block => block.style.display = 'block');
         }
       }
-  
-    if (window.location.pathname.endsWith('/glav/index.html') || window.location.pathname.endsWith('menu.html') || window.location.pathname.endsWith('drinklist.html') || window.location.pathname.endsWith('reservation.html')) {
-        displayContentBasedOnRole();
     }
+    logoutButton.addEventListener('click', () => {
+      sessionStorage.removeItem('loggedInUser');
+      usernameDisplay.style.display = 'none';
+      logoutButton.style.display = 'none';
+      signButton.style.display = 'inline';
+      autButton.style.display = 'inline';
+    });
+window.addEventListener('DOMContentLoaded', () => {
+  displayContentBasedOnRole();
+});
     if (passwordChoice.value === 'manual') {
       manualPasswordFields.style.display = 'block';
     } else {
       manualPasswordFields.style.display = 'none';
     }
+    
   });
   
