@@ -136,7 +136,7 @@ flex-direction: column;
     font-size: 100%;
 }
 .imgplace{
-    content: url("../general/image/place.png");
+    content: url("./general/image/place.png");
     width: 100%;
     transition: width 0.3s ease, height 0.3s ease;
 }
@@ -144,7 +144,7 @@ flex-direction: column;
     width: 150%;
   }
 .placeimg{
-    content: url("../general/image/placebottom.png");
+    content: url("/cursach/general/image/placebottom.png");
     width: 34%;
 }
 body.dark .placeimg{
