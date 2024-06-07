@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
           messageDiv.textContent = 'Login successful!';
           sessionStorage.setItem('loggedInUser', JSON.stringify(user));
           displayContentBasedOnRole();
-          window.location.href = '/glav/index.html';
+          window.location.href = '../glav/index.html';
         } else {
           messageDiv.textContent = 'Invalid email or password.';
         }
@@ -141,6 +141,19 @@ document.addEventListener('DOMContentLoaded', () => {
           const adminHiddenBlocks = document.querySelectorAll('.admin-hidden');
           adminHiddenBlocks.forEach(block => block.style.display = 'block');
         }
+          if ((loggedInUser.role === 'user') || (loggedInUser.role === 'admin')) {
+        const adminBlocks = document.querySelectorAll('.user-only');
+        adminBlocks.forEach(block => block.style.display = 'block');
+
+        const adminHiddenBlocks = document.querySelectorAll('.user-hidden');
+        adminHiddenBlocks.forEach(block => block.style.display = 'none');
+      } else {
+        const adminBlocks = document.querySelectorAll('.user-only');
+        adminBlocks.forEach(block => block.style.display = 'none');
+
+        const adminHiddenBlocks = document.querySelectorAll('.user-hidden');
+        adminHiddenBlocks.forEach(block => block.style.display = 'block');
+      }
       }
     }
     logoutButton.addEventListener('click', () => {
