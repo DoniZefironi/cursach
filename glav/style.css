@@ -144,7 +144,7 @@ flex-direction: column;
     width: 150%;
   }
 .placeimg{
-    content: url("../general/general/image/placebottom.png");
+    content: url("../general/image/placebottom.png");
     width: 34%;
 }
 body.dark .placeimg{
