@@ -1,39 +1,39 @@
 {
     "slides": [
       {
-        "src": "./general/image/1aperol.png",
+        "src": "../general/image/1aperol.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/2aperol.png",
+        "src": "../general/image/2aperol.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/3aperol.png",
+        "src": "../general/image/3aperol.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/4aperol.png",
+        "src": "../general/image/4aperol.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/1classik.png",
+        "src": "../general/image/1classik.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/2classik.png",
+        "src": "../general/image/2classik.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/3classik.png",
+        "src": "../general/image/3classik.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/4classik.png",
+        "src": "../general/image/4classik.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/5classik.png",
+        "src": "../general/image/5classik.png",
         "alt": "Изображение"
       },
       {
