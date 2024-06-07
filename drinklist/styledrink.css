@@ -14,7 +14,7 @@ body.dark {
     color: #fff;
   }
 header{
-    background-image: url("./general/image/drink.png");
+    background-image: url("../general/image/drink.png");
     width: 100%;
     display: flex;
     align-items: center;
@@ -126,46 +126,46 @@ main{
     flex-direction: column;
 }
 .drinkimg1{
-    content: url("./general/image/1aperol.png");
+    content: url("../general/image/1aperol.png");
 }
 .drinkimg2{
-    content: url("./general/image/2aperol.png");
+    content: url("../general/image/2aperol.png");
 }
 .drinkimg3{
-    content: url("./general/image/3aperol.png");
+    content: url("../general/image/3aperol.png");
 }
 .drinkimg4{
-    content: url("./general/image/4aperol.png");
+    content: url("../general/image/4aperol.png");
 }
 .drinkimg5{
-    content: url("./general/image/1classik.png");
+    content: url("../general/image/1classik.png");
 }
 .drinkimg6{
-    content: url("./general/image/2classik.png");
+    content: url("../general/image/2classik.png");
 }
 .drinkimg7{
-    content: url("./general/image/3classik.png");
+    content: url("../general/image/3classik.png");
 }
 .drinkimg8{
-    content: url("./general/image/4classik.png");
+    content: url("../general/image/4classik.png");
 }
 .drinkimg9{
-    content: url("./general/image/5classik.png");
+    content: url("../general/image/5classik.png");
 }
 .drinkimg10{
-    content: url("./general/image/6classik.png");
+    content: url("../general/image/6classik.png");
 }
 .drinkimg11{
-    content: url("./general/image/1sig.png");
+    content: url("../general/image/1sig.png");
 }
 .drinkimg12{
-    content: url("./general/image/2sig.png");
+    content: url("../general/image/2sig.png");
 }
 .drinkimg13{
-    content: url("./general/image/3sig.png");
+    content: url("../general/image/3sig.png");
 }
 .drinkimg14{
-    content: url("./general/image/4sig.png");
+    content: url("../general/image/4sig.png");
 }
 footer{
     display: flex;
@@ -177,7 +177,7 @@ footer{
     width: 100%;
 }
 .imgfooter{
-    content: url("./general/image/placebottom.png");
+    content: url("../general/image/placebottom.png");
     margin-top: 36px;
 }
 body.dark .imgfooter{
