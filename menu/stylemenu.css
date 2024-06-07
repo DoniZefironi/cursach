@@ -10,10 +10,10 @@ body.dark {
     color: #fff;
   }
   .ah1a{
-    font-size: 2em; /* Размер шрифта h1 обычно 2em    */
-    font-weight: bold; /* Bold font of h1 */
-    display: block; /* Выводить как блоковый элемент   */
-    margin-top: 0.67em; /* Маргины как у h1 */
+    font-size: 2em; 
+    font-weight: bold; 
+    display: block; 
+    margin-top: 0.67em; 
     margin-bottom: 0.67em;
     margin-left: 0;
     margin-right: 0;
@@ -27,7 +27,7 @@ body.dark {
     background-color: #FFFFFF;
 }
 header{
-    background-image: url("/general/image/backmenu.png");
+    background-image: url("./general/image/backmenu.png");
     width: 100%;
     display: flex;
     align-items: center;
@@ -130,22 +130,22 @@ font-size: 40px;
     height: 86px;
 }
 .companyimages1{
-    content: url("/general/image/1pos.png");
+    content: url("./general/image/1pos.png");
 }
 .companyimages2{
-    content: url("/general/image/2pos.png");
+    content: url("./general/image/2pos.png");
 }
 .companyimages3{
-    content: url("/general/image/3pos.png");
+    content: url("./general/image/3pos.png");
 }
 .companyimages4{
-    content: url("/general/image/4pos.png");
+    content: url("./general/image/4pos.png");
 }
 .companyimages5{
-    content: url("/general/image/5pos.png");
+    content: url("./general/image/5pos.png");
 }
 .companyimages6{
-    content: url("/general/image/6pos.png");
+    content: url("./general/image/6pos.png");
 }
 .textposition{
     display: flex;
@@ -177,73 +177,73 @@ font-size: 40px;
     gap: 170px;
 }
 .companyimages7{
-    content: url("/general/image/1possnacks.png");
+    content: url("./general/image/1possnacks.png");
 }
 .companyimages8{
-    content: url("/general/image/2possnacks.png");
+    content: url("./general/image/2possnacks.png");
 }
 .companyimages9{
-    content: url("/general/image/3possnacks.png");
+    content: url("./general/image/3possnacks.png");
 }
 .companyimages10{
-    content: url("/general/image/4possnacks.png");
+    content: url("./general/image/4possnacks.png");
 }
 .companyimages11{
-    content: url("/general/image/5possnacks.png");
+    content: url("./general/image/5possnacks.png");
 }
 .companyimages12{
-    content: url("/general/image/6possnacks.png");
+    content: url("./general/image/6possnacks.png");
 }
 .companyimages13{
-    content: url("/general/image/7possnacks.png");
+    content: url("./general/image/7possnacks.png");
 }
 .companyimages14{
-    content: url("/general/image/8possnacks.png");
+    content: url("./general/image/8possnacks.png");
 }
 .companyimages15{
-    content: url("/general/image/9possnacks.png");
+    content: url("./general/image/9possnacks.png");
 }
 .companyimages16{
-    content: url("/general/image/10possnacks.png");
+    content: url("./general/image/10possnacks.png");
 }
 .companyimages17{
-    content: url("/general/image/11possnacks.png");
+    content: url("./general/image/11possnacks.png");
 }
 .companyimages18{
-    content: url("/general/image/12possnacks.png");
+    content: url("./general/image/12possnacks.png");
 }
 .companyimages19{
-    content: url("/general/image/1poshot.png");
+    content: url("./general/image/1poshot.png");
 }
 .companyimages20{
-    content: url("/general/image/2poshot.png");
+    content: url("./general/image/2poshot.png");
 }
 .companyimages21{
-    content: url("/general/image/3poshot.png");
+    content: url("./general/image/3poshot.png");
 }
 .companyimages22{
-    content: url("/general/image/4poshot.png");
+    content: url("./general/image/4poshot.png");
 }
 .companyimages23{
-    content: url("/general/image/5poshot.png");
+    content: url("./general/image/5poshot.png");
 }
 .companyimages24{
-    content: url("/general/image/6poshot.png");
+    content: url("./general/image/6poshot.png");
 }
 .companyimages25{
-    content: url("/general/image/7poshot.png");
+    content: url("./general/image/7poshot.png");
 }
 .companyimages26{
-    content: url("/general/image/8poshot.png");
+    content: url("./general/image/8poshot.png");
 }
 .companyimages27{
-    content: url("/general/image/9poshot.png");
+    content: url("./general/image/9poshot.png");
 }
 .companyimages28{
-    content: url("/general/image/10poshot.png");
+    content: url("./general/image/10poshot.png");
 }
 .companyimages29{
-    content: url("/general/image/11poshot.png");
+    content: url("./general/image/11poshot.png");
 }
 footer{
     display: flex;
@@ -259,7 +259,7 @@ body.dark footer {
     color: #fff;
   }
 .imgfooter{
-    content: url("/general/image/placebottom.png");
+    content: url("./general/image/placebottom.png");
     margin-top: 36px;
 }
 body.dark .imgfooter{
@@ -346,7 +346,7 @@ body.dark .imgfooter{
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 1000; /* Ensure it's above other elements */
+        z-index: 1000; 
       }
       
       .burger-menu span {
@@ -366,7 +366,7 @@ body.dark .imgfooter{
         height: auto;
         background-color: #fff;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-        z-index: 999; /* Ensure it's above the main content but below the burger menu */
+        z-index: 999; 
       }
       
       .header-block1.open {
