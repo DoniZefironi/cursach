@@ -144,7 +144,7 @@ flex-direction: column;
     width: 150%;
   }
 .placeimg{
-    content: url("/cursach/general/image/placebottom.png");
+    content: url("./general/general/image/placebottom.png");
     width: 34%;
 }
 body.dark .placeimg{
@@ -176,7 +176,7 @@ body.dark .placeimg{
 }
 
 .gheterimg{
-    content: url("/general/image/gheter.png");
+    content: url("./general/image/gheter.png");
     width: 44%; 
 }
 body.dark .gheterimg{
@@ -250,7 +250,7 @@ body.dark .gheterimg{
     flex-direction: column;
 }
 .gheterendimg{
-    content: url("/general/image/gheterend.png");
+    content: url("./general/image/gheterend.png");
     width: 45%; 
 }
 .gheter::after {
@@ -365,7 +365,7 @@ text-align: left;
 
 }
 .bookimg{
-    content: url("/general/image/heartfull.png");
+    content: url("./general/image/heartfull.png");
     width: 31.5%; 
     margin-right: 20px;
 }
@@ -467,7 +467,7 @@ letter-spacing: 2.0799999237060547px;
 text-align: center;
 }
 .bottomhonest{
-    content: url("/general/image/IMAGE.png");
+    content: url("./general/image/IMAGE.png");
     width: 30.5%; 
 }
 body.dark .bottomhonest{
@@ -481,7 +481,7 @@ flex-direction: row;
 padding: 62px 0px 40px 0px;
 }
 .needimg{
-    content: url("/general/image/needagift.png");
+    content: url("./general/image/needagift.png");
 }
 .textneed{
     display: flex;
@@ -567,7 +567,7 @@ body.dark #drinkmen{
     height: 760px;
 }
 .lazanya{
-    content: url("/general/image/lazanya.png");
+    content: url("./general/image/lazanya.png");
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -620,7 +620,7 @@ body.dark .block{
     gap: 80px;
 }
 .itsallinimg{
-    content: url("/general/image/itsallin.png");
+    content: url("./general/image/itsallin.png");
     margin: 50px 0px 0px 55px;
 }
 .elementsitsallin{
@@ -677,10 +677,10 @@ text-align: left;
     gap: 20px;
 }
 .juliet{
-    content: url("/general/image/juliet.png");
+    content: url("./general/image/juliet.png");
 }
 .punch{
-    content: url("/general/image/punch.png");
+    content: url("./general/image/punch.png");
 }
 body.dark .punch{
     filter: invert(1);
@@ -702,7 +702,7 @@ body.dark .punch{
     gap: 70px;
 }
 .choice{
-    content: url("/general/image/choice.png");
+    content: url("./general/image/choice.png");
 }
 .textchoice{
     display: flex;
@@ -720,7 +720,7 @@ letter-spacing: 2.0799999237060547px;
 text-align: center;
 }
 .imgdiners{
-    content: url("/general/image/chto.png");
+    content: url("./general/image/chto.png");
 }
 body.dark .imgdiners{
     filter: invert(1);
@@ -779,7 +779,7 @@ body.dark footer {
     color: #fff;
   }
 .imgfooter{
-    content: url("/general/image/placebottom.png");
+    content: url("./general/image/placebottom.png");
     margin-top: 36px;
 }
 body.dark .imgfooter{
