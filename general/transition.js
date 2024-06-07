@@ -1,7 +1,7 @@
 document.getElementById("sign").addEventListener("click", function() {
-    window.location.href = "./authorization/regauto.html";
+    window.location.href = "../authorization/regauto.html";
   });
 
   document.getElementById("aut").addEventListener("click", function() {
-    window.location.href = "./registr/reg.html";
+    window.location.href = "../registr/reg.html";
   });
