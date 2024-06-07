@@ -37,23 +37,23 @@
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/6classik.png",
+        "src": "../general/image/6classik.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/1sig.png",
+        "src": "../general/image/1sig.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/2sig.png",
+        "src": "../general/image/2sig.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/3sig.png",
+        "src": "../general/image/3sig.png",
         "alt": "Изображение"
       },
       {
-        "src": "./general/image/4sig.png",
+        "src": "../general/image/4sig.png",
         "alt": "Изображение"
       }
     ]
